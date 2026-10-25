@@ -1,22 +1,5 @@
 import { useState } from "react";
-import imageOne from "../assets/images/images (4).jpeg";
-import imageTwo from "../assets/images/images (5).jpeg";
-import imageThree from "../assets/images/imageScene.jpg";
-import poster from '../assets/poster/dance.png';
-import BackgroundVideo from '../assets/video/dancers.webm';
 
-
-const images = [
-  { id: 1, image: imageOne, parag: "Seaveiw" },
-  { id: 2, image: imageTwo, parag: "beachview"  },
-  { id: 3, image: imageThree, parag: "Lakeview"  },
-  { id: 5, video: BackgroundVideo, parag: "Watch more", poster:poster  },
-  { id: 6, image: imageThree, parag: "Lakeview"  },
-  { id: 7, video: BackgroundVideo, parag: "Watch more", poster:poster, image: imageThree  }
-
-  
-
-];
 
 function ImageSlider({ images }) {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -52,22 +35,25 @@ function ImageSlider({ images }) {
       ))}
 
       <button className="prev" onClick={prevSlide} onc type="button" aria-label="Previous image">
-        &#10094;
+        <span className="slider-btn">&#10094;</span>
       </button>
       <button className="next" onClick={nextSlide} type="button" aria-label="Next image">
-        &#10095;
+         <span className="slider-btn">&#10095;</span>
       </button>
     </div>
   );
 }
 
-function Tour() {
+function Slider({images, name}) {
   return (
     <>
-      <h1>Tour Dates</h1>
+    <div className="between_tabs" id={name}>
+            <h1>{name}</h1>
       <ImageSlider images={images} />
+    </div>
+
     </>
   );
 }
 
-export default Tour;
+export default Slider;
