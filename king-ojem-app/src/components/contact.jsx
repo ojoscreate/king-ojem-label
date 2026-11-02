@@ -71,9 +71,9 @@ export default function Contact () {
                            
                           </div>
                           <div className="subscribe-check-div">
-                            <input type="checkbox" name="number-consent" className="subscribe-check" />
+                            <input type="checkbox" name="numberConsent" className="subscribe-check" />
                             <div>
-                              <label htmlFor="number-consent">By providing my phone number above, I agree that I am 13+ and agree to receive recurring messages via SMS or Whatsapp from or on behalf of the label.{/* , and agree to Community’s Terms/Privacy: community.com/terms Message frequency varies.*/} Consent is not a condition of Purchase. Message and data rates apply, message help for Help, stop to opt-out.</label>
+                              <label htmlFor="numberConsent">By providing my phone number above, I agree that I am 13+ and agree to receive recurring messages via SMS or Whatsapp from or on behalf of the label.{/* , and agree to Community’s Terms/Privacy: community.com/terms Message frequency varies.*/} Consent is not a condition of Purchase. Message and data rates apply, message help for Help, stop to opt-out.</label>
                             </div>
                             
                           </div>
